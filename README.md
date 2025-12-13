@@ -58,6 +58,21 @@ Adicionalmente, se muestra la integración entre el hardware implementado en la 
   </a>
 </p>
 
+El [diseño de bloques del proyecto](ProcesadorProyectoFINAL.pdf) se realizó con el objetivo de integrar los diferentes periféricos de entrada y salida con el sistema de procesamiento de manera organizada y eficiente, permitiendo una correcta interacción entre el hardware y el software.
+
+El sistema está basado en un Processing System (PS), desde el cual se ejecuta el programa desarrollado en Vitis. Este bloque se encarga de la lógica principal del sistema, como la lectura de sensores, la gestión del usuario, el control de alarmas y la toma de decisiones frente a condiciones de riesgo.
+
+La comunicación entre el procesador y los periféricos se realiza a través de un bus AXI, utilizando un AXI Interconnect que conecta distintos bloques AXI GPIO. Estos módulos permiten:
+
+- Leer las entradas del teclado matricial.
+- Recibir la señal del sensor de movimiento PIR.
+- Controlar dispositivos de salida como el buzzer de alerta.
+
+Adicionalmente, se implementó un módulo personalizado en Verilog para la decodificación del teclado matricial, el cual se ejecuta en la lógica programable (PL) y entrega la información ya procesada al procesador, facilitando su uso desde el software.
+
+El diseño también incluye bloques de memoria BRAM, utilizados para el manejo interno de datos y variables de control, así como módulos de reset y sincronización necesarios para el correcto funcionamiento del sistema.
+Las conexiones físicas hacia los sensores y actuadores se definieron mediante el archivo de restricciones (XDC), asegurando una correcta asignación de pines en la Zybo Z7.
+
 <!-- CREAR UN DIRECTORIO CON EL NOMBRE "src" DONDE INVLUYAN LAS FUENTE (.c Y .h) QUE CREARON PARA EL PROOYECTO-->
 
 <!-- NO OLVIDAD SUBIR EL PDF GENERADOR EN DEL BLOCK DESIGN-->
