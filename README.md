@@ -11,7 +11,11 @@ Adicionalmente, el proyecto incluye una aplicación en PC que permite la visuali
 
 # Integrantes
 
-<!-- Califico el informe unicamente a los integrantes que esten referenciados aqui y en el informe (PDF) -->
+- Daniel Sepúlveda Suárez
+
+- Juan Felipe Gaitán Nocua
+
+- Samuel Mahecha Arango
 
 Indice:
 
