@@ -79,8 +79,8 @@ Las conexiones físicas hacia los sensores y actuadores se definieron mediante e
 
 ## Lista de anexos
 
-En la [carpeta src](src/) se incluyen los **archivos fuente del proyecto**, correspondientes tanto al desarrollo del sistema embebido como a la aplicación de visualización.  
-La carpeta contiene los programas escritos en **lenguaje C (.c y .h)** utilizados en el entorno **Vitis** para el control del sistema, así como los **archivos en Python (.py)** empleados en la aplicación de monitoreo y análisis.  
+En la [carpeta src](src/) se incluyen los **archivos fuente del proyecto**, correspondientes tanto al desarrollo del sistema embebido como a la aplicación de visualización.  La carpeta contiene los programas escritos en **lenguaje C (.c y .h)** utilizados en el entorno **Vitis** para el control del sistema, así como los **archivos en Python (.py)** empleados en la aplicación de monitoreo y análisis.  
+
 El funcionamiento y la lógica de estos archivos se encuentran **debidamente explicados y documentados en el [informe del Proyecto](InformeFinal.pdf)**.
 
 <!-- CREAR UN DIRECTORIO CON EL NOMBRE "src" DONDE INVLUYAN LAS FUENTE (.c Y .h) QUE CREARON PARA EL PROOYECTO-->
