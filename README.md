@@ -62,6 +62,10 @@ El [diseño de bloques del proyecto](ProcesadorProyectoFINAL.pdf) se realizó co
 
 El sistema está basado en un Processing System (PS), desde el cual se ejecuta el programa desarrollado en Vitis. Este bloque se encarga de la lógica principal del sistema, como la lectura de sensores, la gestión del usuario, el control de alarmas y la toma de decisiones frente a condiciones de riesgo.
 
+<p align="center">
+<img width="1133" height="761" alt="ProcesadorProyectoFINAL" src="https://github.com/user-attachments/assets/845b8a8d-f59e-4128-98ef-8c523eb2c240" />
+</p> 
+
 La comunicación entre el procesador y los periféricos se realiza a través de un bus AXI, utilizando un AXI Interconnect que conecta distintos bloques AXI GPIO. Estos módulos permiten:
 
 - Leer las entradas del teclado matricial.
