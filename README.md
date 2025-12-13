@@ -1,4 +1,4 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/eiNgq3fR)
+  [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/eiNgq3fR)
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=22047085&assignment_repo_type=AssignmentRepo)
 # Sistema de seguridad para la detección y monitoreo de campos magnéticos 
 
@@ -26,7 +26,18 @@ Indice:
 
 ## Descripción
 
-<!-- Descripción general y lo mas completa posible del proyecto" -->
+## Descripción
+
+Este proyecto consiste en el diseño e implementación de un sistema de seguridad para el monitoreo de campos magnéticos, desarrollado sobre un *System on Chip* (SoC) en la FPGA **Zybo Z7**, basada en la arquitectura **Zynq-7000**. El sistema tiene como objetivo principal medir, analizar y supervisar en tiempo real los niveles de campo magnético presentes en un entorno determinado, así como detectar condiciones de riesgo y alertar al usuario cuando se superan umbrales predefinidos.
+
+El diseño del SoC se realizó en **Vivado 2023-1** mediante el uso de *Block Design*, integrando el procesador ARM del sistema (Processing System) con la lógica programable (Programmable Logic) a través de interfaces **AXI**. Para la comunicación con los periféricos se emplearon módulos **AXI-GPIO** e **I2C**, permitiendo una interacción eficiente entre el hardware y el software embebido.
+
+El sistema incorpora un magnetómetro triaxial para la medición de las componentes \(X\), \(Y\) y \(Z\) del campo magnético, un sensor de movimiento PIR para detección de presencia, un teclado matricial para la interacción con el usuario, una pantalla LCD para la visualización local de información y un buzzer como mecanismo de alerta sonora. A partir de las mediciones obtenidas, el software embebido calcula la magnitud del campo magnético y evalúa condiciones de peligro según rangos establecidos, activando alertas visuales y sonoras cuando es necesario.
+
+Adicionalmente, el proyecto incluye una aplicación desarrollada en Python que permite la supervisión del sistema desde un computador. Esta aplicación recibe los datos enviados por la FPGA mediante comunicación serial, muestra en tiempo real la evolución de las componentes del campo magnético mediante gráficas, registra históricamente las mediciones organizadas por fecha, almacena incidentes de campos magnéticos peligrosos y gestiona usuarios con contraseñas cifradas en una base de datos.
+
+En conjunto, este proyecto demuestra la integración completa entre hardware reconfigurable, software embebido y aplicaciones de alto nivel, aplicando conceptos fundamentales de sistemas embebidos, comunicación hardware–software y monitoreo de variables físicas en tiempo real, orientados a un escenario de seguridad industrial.
+
 
 ## Informe
 
