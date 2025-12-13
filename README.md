@@ -6,7 +6,7 @@ En este repositorio se presenta el desarrollo completo de un sistema de segurida
 
 El sistema integra diversos periféricos como un magnetómetro triaxial para la medición del campo magnético, un sensor de movimiento PIR, un teclado matricial, una pantalla LCD y un buzzer de alarma, los cuales se comunican con el procesador a través de interfaces **AXI-GPIO** e **I2C**. A partir de las mediciones obtenidas, el sistema calcula la magnitud del campo magnético, detecta condiciones de riesgo cuando se superan umbrales definidos y activa mecanismos de alerta tanto a nivel local como a nivel de software.
 
-Adicionalmente, el proyecto incluye una aplicación en PC que permite la visualización en tiempo real de las componentes \(X\), \(Y\) y \(Z\) del campo magnético, el registro histórico de mediciones e incidentes organizados por fecha, y la gestión de usuarios mediante una base de datos con contraseñas cifradas. De esta manera, el proyecto demuestra la integración completa entre hardware reconfigurable, software y aplicaciones de alto nivel, aplicando conceptos fundamentales comunicación hardware–software y monitoreo de variables físicas en tiempo real.
+Adicionalmente, el proyecto incluye una aplicación en PC que permite la visualización en tiempo real de las componentes X, Y y Z del campo magnético, el registro histórico de mediciones e incidentes organizados por fecha, y la gestión de usuarios mediante una base de datos con contraseñas cifradas. De esta manera, el proyecto demuestra la integración completa entre hardware reconfigurable, software y aplicaciones de alto nivel, aplicando conceptos fundamentales comunicación hardware–software y monitoreo de variables físicas en tiempo real.
 
 
 # Integrantes
@@ -42,7 +42,7 @@ En conjunto, el proyecto propone una solución integral de monitoreo, análisis 
 
 El [informe Final del Proyecto](InformeFinal.pdf) documenta de manera detallada todo el proceso de desarrollo del proyecto, abarcando desde la definición del problema y la justificación de la solución propuesta, hasta el diseño e implementación completa del sistema. En este documento se explica con profundidad la arquitectura hardware y software del sistema, incluyendo el diseño del *System on Chip*, la configuración de los periféricos y la interacción entre la lógica programable y el procesador.
 
-Adicionalmente, el informe presenta un análisis detallado del software desarrollado en lenguaje \texttt{C}, describiendo el funcionamiento de cada uno de los archivos \texttt{.c} y \texttt{.h}, sus funciones principales, la comunicación con los periféricos, la gestión de usuarios, el manejo de eventos de riesgo y el flujo general del programa. También se incluye la descripción del software de supervisión en PC, el registro histórico de datos, los resultados obtenidos durante las pruebas, las conclusiones del proyecto y las referencias empleadas.
+Adicionalmente, el informe presenta un análisis detallado del software desarrollado en lenguaje *C*, describiendo el funcionamiento de cada uno de los archivos *.c* y *.h*, sus funciones principales, la comunicación con los periféricos, la gestión de usuarios, el manejo de eventos de riesgo y el flujo general del programa. También se incluye la descripción del software de supervisión en PC, el registro histórico de datos, los resultados obtenidos durante las pruebas, las conclusiones del proyecto y las referencias empleadas.
 
 
 
