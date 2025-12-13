@@ -22,7 +22,8 @@ Indice:
 1. [Descripción](#descripción)
 2. [Informe](#informe)
 3. [Implementación](#implementacion)
-4. [Lista de anexos](#anexos)
+4. [Lista de anexos](#lista-de-anexos)
+
 
 ## Descripción
 
