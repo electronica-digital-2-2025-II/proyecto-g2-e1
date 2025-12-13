@@ -42,9 +42,9 @@ En conjunto, el proyecto propone una solución integral de monitoreo, análisis 
 
 [Informe Final del Proyecto](proyecto-g2-e1/InformeFinal.pdf)
 
-El informe final documenta de manera detallada todo el proceso de desarrollo del proyecto, abarcando desde la definición del problema y la justificación de la solución propuesta, hasta el diseño e implementación completa del sistema. En este documento se explica con profundidad la arquitectura hardware y software del sistema, incluyendo el diseño del *System on Chip*, la configuración de los periféricos y la interacción entre la lógica programable y el procesador.
+El [informe Final del Proyecto](proyecto-g2-e1/InformeFinal.pdf) documenta de manera detallada todo el proceso de desarrollo del proyecto, abarcando desde la definición del problema y la justificación de la solución propuesta, hasta el diseño e implementación completa del sistema. En este documento se explica con profundidad la arquitectura hardware y software del sistema, incluyendo el diseño del *System on Chip*, la configuración de los periféricos y la interacción entre la lógica programable y el procesador.
 
-Adicionalmente, el informe presenta un análisis detallado del software embebido desarrollado en lenguaje \texttt{C}, describiendo el funcionamiento de cada uno de los archivos \texttt{.c} y \texttt{.h}, sus funciones principales, la comunicación con los periféricos, la gestión de usuarios, el manejo de eventos de riesgo y el flujo general del programa. También se incluye la descripción del software de supervisión en PC, el registro histórico de datos, los resultados obtenidos durante las pruebas, las conclusiones del proyecto y las referencias empleadas.
+Adicionalmente, el informe presenta un análisis detallado del software desarrollado en lenguaje \texttt{C}, describiendo el funcionamiento de cada uno de los archivos \texttt{.c} y \texttt{.h}, sus funciones principales, la comunicación con los periféricos, la gestión de usuarios, el manejo de eventos de riesgo y el flujo general del programa. También se incluye la descripción del software de supervisión en PC, el registro histórico de datos, los resultados obtenidos durante las pruebas, las conclusiones del proyecto y las referencias empleadas.
 
 
 
