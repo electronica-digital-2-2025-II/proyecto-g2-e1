@@ -26,17 +26,16 @@ Indice:
 
 ## Descripción
 
-## Descripción
+El proyecto surge ante la necesidad de contar con herramientas accesibles que permitan supervisar y controlar la exposición a campos magnéticos en entornos donde estos pueden alcanzar niveles elevados, como instalaciones industriales, zonas con equipos eléctricos de alta potencia o espacios de trabajo con riesgo potencial para las personas. La ausencia de sistemas de monitoreo continuo y de fácil integración motiva el desarrollo de una solución que combine medición en tiempo real, detección de riesgo y registro histórico de eventos.
 
-Este proyecto consiste en el diseño e implementación de un sistema de seguridad para el monitoreo de campos magnéticos, desarrollado sobre un *System on Chip* (SoC) en la FPGA **Zybo Z7**, basada en la arquitectura **Zynq-7000**. El sistema tiene como objetivo principal medir, analizar y supervisar en tiempo real los niveles de campo magnético presentes en un entorno determinado, así como detectar condiciones de riesgo y alertar al usuario cuando se superan umbrales predefinidos.
+El sistema desarrollado permite adquirir las componentes del campo magnético en los ejes X, Y y Z, procesar esta información para calcular la magnitud del campo y evaluar automáticamente si los valores medidos se encuentran dentro de rangos seguros. Cuando se detectan niveles considerados peligrosos, el sistema activa mecanismos de alerta visuales y sonoros, proporcionando una respuesta inmediata ante situaciones de riesgo.
 
-El diseño del SoC se realizó en **Vivado 2023-1** mediante el uso de *Block Design*, integrando el procesador ARM del sistema (Processing System) con la lógica programable (Programmable Logic) a través de interfaces **AXI**. Para la comunicación con los periféricos se emplearon módulos **AXI-GPIO** e **I2C**, permitiendo una interacción eficiente entre el hardware y el software embebido.
+La interacción con el usuario se realiza tanto de manera local como remota. A nivel local, el sistema cuenta con una pantalla LCD, un teclado matricial y un buzzer que facilitan la visualización de datos, la navegación por menús y la notificación de alarmas. A nivel remoto, una aplicación desarrollada en Python permite visualizar en tiempo real la evolución del campo magnético mediante gráficas, consultar la magnitud instantánea del campo y acceder a un registro histórico de mediciones organizadas por fecha.
 
-El sistema incorpora un magnetómetro triaxial para la medición de las componentes \(X\), \(Y\) y \(Z\) del campo magnético, un sensor de movimiento PIR para detección de presencia, un teclado matricial para la interacción con el usuario, una pantalla LCD para la visualización local de información y un buzzer como mecanismo de alerta sonora. A partir de las mediciones obtenidas, el software embebido calcula la magnitud del campo magnético y evalúa condiciones de peligro según rangos establecidos, activando alertas visuales y sonoras cuando es necesario.
+Adicionalmente, el sistema incorpora un módulo de gestión de usuarios, donde se almacenan credenciales de acceso de forma segura mediante contraseñas cifradas, así como un registro detallado de incidentes asociados a exposiciones peligrosas al campo magnético. Esta información queda almacenada en una base de datos, lo que permite realizar análisis posteriores y evidenciar el comportamiento del entorno monitoreado a lo largo del tiempo.
 
-Adicionalmente, el proyecto incluye una aplicación desarrollada en Python que permite la supervisión del sistema desde un computador. Esta aplicación recibe los datos enviados por la FPGA mediante comunicación serial, muestra en tiempo real la evolución de las componentes del campo magnético mediante gráficas, registra históricamente las mediciones organizadas por fecha, almacena incidentes de campos magnéticos peligrosos y gestiona usuarios con contraseñas cifradas en una base de datos.
+En conjunto, el proyecto propone una solución integral de monitoreo, análisis y registro de campos magnéticos, orientada a mejorar la seguridad y la toma de decisiones en entornos con posibles riesgos asociados a la exposición prolongada a este tipo de campos.
 
-En conjunto, este proyecto demuestra la integración completa entre hardware reconfigurable, software embebido y aplicaciones de alto nivel, aplicando conceptos fundamentales de sistemas embebidos, comunicación hardware–software y monitoreo de variables físicas en tiempo real, orientados a un escenario de seguridad industrial.
 
 
 ## Informe
