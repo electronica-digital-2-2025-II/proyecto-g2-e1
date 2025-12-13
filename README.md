@@ -79,7 +79,7 @@ Las conexiones físicas hacia los sensores y actuadores se definieron mediante e
 
 ## Lista de anexos
 
-En la [carpeta scr](scr/) se incluyen los **archivos fuente del proyecto**, correspondientes tanto al desarrollo del sistema embebido como a la aplicación de visualización.  La carpeta contiene los programas escritos en **lenguaje C (.c y .h)** utilizados en el entorno **Vitis** para el control del sistema, así como los **archivos en Python (.py)** empleados en la aplicación de monitoreo y análisis.  
+En la [carpeta scr](scr/) se incluyen los **archivos fuente del proyecto**, correspondientes tanto al desarrollo del sistema embebido como a la aplicación de visualización.  La carpeta contiene los programas escritos en **lenguaje C (.c y .h)** utilizados en el entorno **Vitis** para el control del sistema, así como los **archivos en Python (.py)** empleados en la aplicación de monitoreo y análisis.  Además se incluyen archivos de utilizad como el propio wrapper generado por Vivado e incluso el archivo .Xdc utilizado por el grupo para el uso de los pines físicos de la FPGA.
 
 El funcionamiento y la lógica de estos archivos se encuentran **debidamente explicados y documentados en el [informe del Proyecto](InformeFinal.pdf)**.
 
