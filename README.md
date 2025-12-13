@@ -47,7 +47,6 @@ Adicionalmente, el informe presenta un análisis detallado del software desarrol
 
 
 ## Implementación
-## Video explicativo del proyecto
 
 Para comprender de manera integral el funcionamiento del sistema desarrollado, se realizó un [video explicativo](https://youtu.be/mwqJV5wtScI) en el cual se presenta el comportamiento general del proyecto, la interacción entre los periféricos implementados y el flujo de operación del sistema de seguridad para el monitoreo de campos magnéticos. En este video se explica cómo se adquieren las mediciones del sensor, cómo se procesa la información para calcular la magnitud del campo magnético, la detección de condiciones de riesgo y la activación de alarmas, así como la visualización de los datos tanto en la interfaz local como en la aplicación desarrollada en PC.
 
@@ -58,9 +57,6 @@ Adicionalmente, se muestra la integración entre el hardware implementado en la 
     <img src="https://img.youtube.com/vi/mwqJV5wtScI/0.jpg" alt="Video explicativo del sistema de monitoreo de campos magnéticos" style="width:480px; border: 2px solid #ccc; border-radius: 8px;">
   </a>
 </p>
-
-<!-- Video explicativo del funcionamiento del proytecto -->
-
 
 <!-- CREAR UN DIRECTORIO CON EL NOMBRE "src" DONDE INVLUYAN LAS FUENTE (.c Y .h) QUE CREARON PARA EL PROOYECTO-->
 
